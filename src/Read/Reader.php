@@ -8,8 +8,8 @@ use Harmony\DAL\Model;
 interface Reader
 {
     /**
-     * @param Query|null $query
+     * @param Query $query
      * @return Collection|Model[]
      */
-    public function get(Query $query = null): Collection;
+    public function get(Query $query): Collection;
 }
